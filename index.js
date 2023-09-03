@@ -1,5 +1,5 @@
 const main = document.querySelector(".main");
-const arrPoints = document.querySelectorAll(".point");
+const arrPoints = main.querySelectorAll(".point");
 let isActivePoint = false;
 
 const handleClick = ({ target }) => {
