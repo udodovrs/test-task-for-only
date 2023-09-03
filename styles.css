@@ -1,0 +1,166 @@
+.main {
+    position: relative;   
+    width: 100vw;
+    height: 100vh;
+  }
+
+.image {   
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .point{   
+    position: relative;
+    width: 41px;
+    height: 41px;
+    opacity: 85%;
+    border-radius: 50%;
+    transition: all .3s; 
+    color: white; 
+    font-size: large;  
+    overflow: hidden;  
+    white-space: nowrap;
+  }
+
+  .cross {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    top: 25px;
+    left: 20px;
+    transition: all .3s;
+  }
+
+  .pointActive{         
+    opacity: 100%;
+    border-radius: 60px;
+  }
+
+  .point::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    top: 18px;
+    left: 13px;
+    background-color: white;   
+    transform: rotate(90deg);
+    transition: all .5s;
+  }
+
+  .point::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    top: 18px;
+    left: 13px;
+    background-color: white;     
+  }
+
+  .point span {    
+    opacity: 0; 
+    display: none;
+    transition: all .3s;
+  }
+  
+  .point.pointActive span {
+    display: inline-block; 
+    position: absolute;
+    opacity: 100%;
+    width: auto;
+    top: 9px;
+    left: 41px; 
+  }
+
+  .point.pointActive::before {  
+    transform: rotate(360deg);   
+  }
+
+.build1 {
+    background-color: #6ABF4B;
+    top: 42vh; 
+    left: 35vw;
+}
+.build1.pointActive {
+    width: 130px;
+}
+
+.build2 {
+    background-color: #3877EE;
+    top: 60vh; 
+    left: 23vw;
+}
+.build2.pointActive {
+    width: 130px;
+}
+
+.build3 {
+    background-color: #3877EE;
+    top: 47vh; 
+    left: 55vw;
+}
+.build3.pointActive {
+    width: 130px;
+}
+.build4 {
+    background-color: #3877EE;
+    top: 15vh; 
+    left: 30vw;
+}
+.build4.pointActive {
+    width: 160px;
+}
+.build5 {
+    background-color: #3877EE;
+    top: 3vh; 
+    left: 71vw;
+}
+.build5.pointActive {
+    width: 180px;
+}
+.build6 {
+    background-color: #3877EE;
+    top: 22vh; 
+    left: 74vw;
+}
+.build6.pointActive {
+    width: 215px;
+}
+.build7 {
+    background-color: #3877EE;
+    top: 41vh; 
+    left: 83vw;
+}
+.build7.pointActive {
+    width: 130px;
+}
+.build8 {
+    background-color:  #6ABF4B;
+    top: 33vh; 
+    left: 68vw;
+}
+.build8.pointActive {
+    width: 130px;
+}
+.build9 {
+    background-color:  #6ABF4B;
+    top: 4vh; 
+    left: 58vw;
+}
+.build9.pointActive {
+    width: 130px;
+}
+.build10 {
+    background-color:  #6ABF4B;
+    top: 35vh; 
+    left: 58vw;
+}
+.build10.pointActive {
+    width: 130px;
+}
